@@ -16,15 +16,14 @@ Add this command in your composer.json and update composer through terminal
 
 <pre><code>"nao-pon/flysystem-google-drive": "~1.1"</code></pre>
 
-Add **[GoogleDriveAdapter](https://github.com/jd-patel/laravel-google-drive-s3/blob/master/app/Providers/GoogleDriveAdapter.php)** and **[GoogleDriveServiceProvider](https://github.com/jd-patel/laravel-google-drive-s3/blob/master/app/Providers/GoogleDriveServiceProvider.php)** into "app/providers"
+Add [GoogleDriveAdapter](https://github.com/jd-patel/laravel-google-drive-s3/blob/master/app/Providers/GoogleDriveAdapter.php) and [GoogleDriveServiceProvider](https://github.com/jd-patel/laravel-google-drive-s3/blob/master/app/Providers/GoogleDriveServiceProvider.php) into "app/providers"
 
 Add App\Providers\GoogleDriveServiceProvider::class, in "config/app.php"
 
 Add disk "google" into "config/filesystems.php"
 
-<code>
+<pre><code>
 'disks' => [
-
     'google' => [
         'driver' => 'google',
         'clientId' => env('GOOGLE_DRIVE_CLIENT_ID'),
@@ -33,26 +32,23 @@ Add disk "google" into "config/filesystems.php"
         'folderId' => env('GOOGLE_DRIVE_ROOT_FOLDER_ID'),
     ],
 ],
-</code>
+</code></pre>
 
 ## Create your own Google Drive API Keys
 
 For more details on how you can get your own Google Drive Keys please refer below links:
 
-- **[Get your Google Drive Client ID and Secret](https://github.com/jd-patel/laravel-google-drive-s3/blob/master/Readme/Get-your-Google-Drive-ClientID-and-Secret.md)**
-- **[Get your Google Drive Refresh Token](https://github.com/jd-patel/laravel-google-drive-s3/blob/master/Readme/Get-your-Google-Drive-Refresh-Token.md)**
-- **[Get your Google Drive Root Folder ID](https://github.com/jd-patel/laravel-google-drive-s3/blob/master/Readme/root-folder-id.md)**
-
+- [Get your Google Drive Client ID and Secret](https://github.com/jd-patel/laravel-google-drive-s3/blob/master/Readme/Get-your-Google-Drive-ClientID-and-Secret.md)
+- [Get your Google Drive Refresh Token](https://github.com/jd-patel/laravel-google-drive-s3/blob/master/Readme/Get-your-Google-Drive-Refresh-Token.md)
+- [Get your Google Drive Root Folder ID](https://github.com/jd-patel/laravel-google-drive-s3/blob/master/Readme/root-folder-id.md)
 
 ## Add your google drive keys to .env file
 
 Please add the keys you have created to .env file as below:
 
-<pre>
-	<code>
+<pre><code>
 GOOGLE_DRIVE_CLIENT_ID=YOUR_GOOGLE_DRIVE_CLIENT_ID
 GOOGLE_DRIVE_CLIENT_SECRET=YOUR_GOOGLE_DRIVE_CLIENT_SECRET
 GOOGLE_DRIVE_REFRESH_TOKEN=YOUR_GOOGLE_DRIVE_REFRESH_TOKEN
 GOOGLE_DRIVE_ROOT_FOLDER_ID=YOUR_GOOGLE_DRIVE_ROOT_FOLDER_ID
-	</code>
-</pre>
+</code></pre>
