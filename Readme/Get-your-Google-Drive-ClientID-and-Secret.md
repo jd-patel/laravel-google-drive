@@ -36,7 +36,7 @@ Note: If your account is G Suite account then only you will be able to select In
 
 Add your application name and Save it
 
-<img src="https://user-images.githubusercontent.com/70930043/93717388-1a67dc80-fb93-11ea-951e-f9e8e4937d49.png" title="Step 6">
+<img src="https://user-images.githubusercontent.com/70930043/93719259-e8f50e00-fb9e-11ea-8aa1-0018d403acc4.png" title="Step 6">
 
 Then go to Credentials tab from left panel and click on "+ Create Credentials" and select "OAuth Client ID".
 
