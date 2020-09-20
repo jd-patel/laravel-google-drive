@@ -26,13 +26,11 @@ Add disk "google" into "config/filesystems.php"
 'disks' => [
 
     'google' => [
-
         'driver' => 'google',
         'clientId' => env('GOOGLE_DRIVE_CLIENT_ID'),
         'clientSecret' => env('GOOGLE_DRIVE_CLIENT_SECRET'),
         'refreshToken' => env('GOOGLE_DRIVE_REFRESH_TOKEN'),
         'folderId' => env('GOOGLE_DRIVE_ROOT_FOLDER_ID'),
-        
     ],
 ],
 </code>
@@ -43,4 +41,4 @@ For more details on how you can get your own Google Drive Keys please refer belo
 
 - **[Get your Google Drive Client ID and Secret](https://github.com/jd-patel/laravel-google-drive-s3/blob/master/Readme/Get-your-Google-Drive-ClientID-and-Secret.md)**
 - **[Get your Google Drive Refresh Token](https://github.com/jd-patel/laravel-google-drive-s3/blob/master/Readme/Get-your-Google-Drive-Refresh-Token.md)**
-- **[Get your Google Drive Root Folder ID](#)**
+- **[Get your Google Drive Root Folder ID](https://github.com/jd-patel/laravel-google-drive-s3/blob/master/Readme/root-folder-id.md)**
