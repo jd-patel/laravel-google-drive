@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GoogleDriveController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +15,6 @@ use App\Http\Controllers\GoogleDriveController;
 |
 */
 
-Route::get('/drive/list/files', [GoogleDriveController::class, 'listFiles']);
+Route::get('/drive/list', [GoogleDriveController::class, 'listFiles'])->name('drive.list');
+Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
+// Auth::routes();
