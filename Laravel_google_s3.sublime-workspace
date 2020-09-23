@@ -519,6 +519,42 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "routes/web.php",
+			"settings":
+			{
+				"buffer_size": 710,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/DashboardController.php",
+			"settings":
+			{
+				"buffer_size": 296,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/dashboard/index.blade.php",
+			"settings":
+			{
+				"buffer_size": 280,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/GoogleDriveController.php",
+			"settings":
+			{
+				"buffer_size": 485,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -556,9 +592,34 @@
 	},
 	"expanded_folders":
 	[
+		"/var/www/html/demo/Laravel_google_drive_s3"
 	],
 	"file_history":
 	[
+		"/var/www/html/demo/Laravel_google_drive_s3/.env",
+		"/var/www/html/demo/Laravel_google_drive_s3/resources/views/includes/header.blade.php",
+		"/var/www/html/demo/Laravel_google_drive_s3/resources/views/includes/head.blade.php",
+		"/var/www/html/demo/Laravel_google_drive_s3/resources/views/dashboard/index.blade.php",
+		"/var/www/html/demo/Laravel_google_drive_s3/resources/sass/app.scss",
+		"/var/www/html/demo/Laravel_google_drive_s3/resources/sass/_variables.scss",
+		"/var/www/html/demo/Laravel_google_drive_s3/.htaccess",
+		"/var/www/html/demo/Laravel_google_drive_s3/public/.htaccess",
+		"/var/www/html/demo/Laravel_google_drive_s3/resources/views/includes/scripts.blade.php",
+		"/var/www/html/demo/Laravel_google_drive_s3/server.php",
+		"/var/www/html/demo/Laravel_google_drive_s3/public/css/app.css",
+		"/var/www/html/demo/Laravel_google_drive_s3/node_modules/bootstrap/dist/css/bootstrap.css",
+		"/var/www/html/demo/Laravel_google_drive_s3/resources/css/app.css",
+		"/var/www/html/demo/Laravel_google_drive_s3/bootstrap/app.php",
+		"/var/www/html/demo/Laravel_google_drive_s3/resources/views/includes/sidebar.blade.php",
+		"/var/www/html/demo/Laravel_google_drive_s3/resources/views/includes/footer.blade.php",
+		"/var/www/html/cotracedashboard/dashboard/resources/views/cotrace/index.blade.php",
+		"/var/www/html/cotracedashboard/dashboard/resources/views/cotrace/list.blade.php",
+		"/var/www/html/demo/Laravel_google_drive_s3/resources/views/includes/app.blade.php",
+		"/var/www/html/demo/Laravel_google_drive_s3/resources/views/includes/pagination.blade.php",
+		"/var/www/html/demo/Laravel_google_drive_s3/resources/views/includes/flash-message.blade.php",
+		"/var/www/html/cotracedashboard/dashboard/resources/views/includes/head.blade.php",
+		"/var/www/html/cotracedashboard/dashboard/resources/views/layouts/sidebar.blade.php",
+		"/var/www/html/cotracedashboard/dashboard/resources/views/layouts/default.blade.php",
 		"/var/www/html/pheno/ggcPHENO_old.sublime-project",
 		"/home/vijay/Documents/Saved Queries/change php version.php",
 		"/var/www/html/pheno/ggcpheno_old/app/Models/Participant_Document_Track.php",
@@ -601,7 +662,6 @@
 		"/var/www/html/demo/Laravel_google_drive_s3/README.md",
 		"/var/www/html/demo/Laravel_google_drive_s3/Readme/Get-your-Google-Drive-ClientID-and-Secret.md",
 		"/var/www/html/demo/Laravel_google_drive_s3/config/filesystems.php",
-		"/var/www/html/demo/Laravel_google_drive_s3/.env",
 		"/var/www/html/demo/Laravel_google_drive_s3/Readme/Get your Google Drive Client ID and Secret.md",
 		"/var/www/html/demo/Laravel_google_drive_s3/Readme/Get your Google Drive Refresh Token.md",
 		"/var/www/html/demo/Laravel_google_drive_s3/Readme/root-folder-id.md",
@@ -663,34 +723,11 @@
 		"/opt/lampp/htdocs/pheno/ggcpheno_old/resources/views/la/participant_documents/create.blade.php",
 		"/var/www/html/demo/angularJWT/angular/package.json",
 		"/var/www/html/demo/angularJWT/angular/src/app/components/login/login.component.html",
-		"/var/www/html/demo/angularJWT/angular/tsconfig.app.json",
-		"/var/www/html/demo/angularJWT/angular/tsconfig.json",
-		"/var/www/html/demo/Laravel-Angular-JWT/angular/src/app/components/navbar/navbar.component.html",
-		"/var/www/html/demo/angularJWT/backend/composer.json",
-		"/opt/lampp/htdocs/pheno/ggcpheno_old/resources/views/la/participants/edit.blade.php",
-		"/opt/lampp/htdocs/pheno/ggcpheno_old/resources/views/la/htr_datas/upload.blade.php",
-		"/opt/lampp/htdocs/pheno/ggcpheno_old/resources/views/la/participants/index.blade.php",
-		"/opt/lampp/htdocs/pheno/ggcpheno_old/resources/views/la/htr_datas/all.blade.php",
-		"/opt/lampp/htdocs/pheno/ggcpheno_old/app/Http/Controllers/LA/RecontactController.php",
-		"/opt/lampp/htdocs/pheno/ggcpheno_old/resources/views/la/recontact/index.blade.php",
-		"/opt/lampp/htdocs/pheno/ggcpheno_old/app/Http/admin_routes.php",
-		"/opt/lampp/htdocs/pheno/ggcpheno_old/app/Http/Controllers/LA/HTR_Excel_ImportsController.php",
-		"/opt/lampp/htdocs/pheno/ggcpheno_new/app/Http/Controllers/LA/Participant_DocumentsController.php",
-		"/opt/lampp/htdocs/pheno/ggcpheno_old/app/Models/Participant_Document.php",
-		"/opt/lampp/htdocs/pheno/ggcpheno_old/app/Http/Controllers/AdminController.php",
-		"/opt/lampp/htdocs/pheno/ggcpheno_old/config/filesystems.php",
-		"/opt/lampp/htdocs/pheno/ggcpheno_new/vendor/doctrine/inflector/lib/Doctrine/Common/Inflector/Inflector.php",
-		"/opt/lampp/htdocs/pheno/ggcpheno_old/vendor/psr/http-client/src/ClientInterface.php",
-		"/opt/lampp/htdocs/pheno/ggcpheno_old/vendor/doctrine/inflector/lib/Doctrine/Common/Inflector/Inflector.php",
-		"/opt/lampp/htdocs/pheno/ggcpheno_old/vendor/doctrine/inflector/lib/Doctrine/Inflector/Inflector.php",
-		"/opt/lampp/htdocs/pheno/ggcpheno_new/composer.json",
-		"/opt/lampp/htdocs/pheno/ggcpheno_new/config/filesystems.php",
-		"/opt/lampp/htdocs/pheno/ggcpheno_old/config/app.php",
-		"/opt/lampp/htdocs/pheno/ggcpheno_new/config/app.php"
+		"/var/www/html/demo/angularJWT/angular/tsconfig.app.json"
 	],
 	"find":
 	{
-		"height": 33.0
+		"height": 45.0
 	},
 	"find_in_files":
 	{
@@ -753,6 +790,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"@endsection",
+			"section",
 			"document",
 			"Mail::send",
 			"change_password",
@@ -878,9 +917,7 @@
 			"php_pdo_mysql",
 			"sleep(",
 			"S3Client",
-			"ObjectUploader",
-			"index",
-			"S3Client"
+			"ObjectUploader"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -944,8 +981,124 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "routes/web.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 710,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								92,
+								92
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Http/Controllers/DashboardController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 296,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								290,
+								290
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "resources/views/dashboard/index.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 280,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/Http/Controllers/GoogleDriveController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 485,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								304,
+								304
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -998,8 +1151,36 @@
 		"selected_items":
 		[
 			[
+				"header.php",
+				"resources/views/includes/header.blade.php"
+			],
+			[
+				"resources/index.",
+				"resources/views/dashboard/index.blade.php"
+			],
+			[
 				".env",
 				".env"
+			],
+			[
+				"scripts.",
+				"resources/views/includes/scripts.blade.php"
+			],
+			[
+				"resources/includes/",
+				"resources/views/includes/head.blade.php"
+			],
+			[
+				"Controllers/",
+				"app/Http/Controllers/GoogleDriveController.php"
+			],
+			[
+				"Dashboardcon",
+				"app/Http/Controllers/DashboardController.php"
+			],
+			[
+				"web",
+				"routes/web.php"
 			],
 			[
 				"emails/",
@@ -1480,34 +1661,6 @@
 			[
 				"user/",
 				"resources/views/la/users/edit.blade.php"
-			],
-			[
-				"admin coin",
-				"app/Http/Controllers/AdminController.php"
-			],
-			[
-				"participant_document",
-				"app/Http/Controllers/LA/Participant_DocumentsController.php"
-			],
-			[
-				"participant document",
-				"/tmp/fz3temp-2/Participant_DocumentsController.php"
-			],
-			[
-				"participantdocum",
-				"app/Models/Participant_Document.php"
-			],
-			[
-				"general",
-				"app/Models/General.php"
-			],
-			[
-				"participat/edit.blade.php",
-				"resources/views/la/participants/edit.blade.php"
-			],
-			[
-				"participant_docum",
-				"app/Http/Controllers/LA/Participant_DocumentsController.php"
 			]
 		],
 		"width": 0.0
@@ -1528,7 +1681,7 @@
 		"selected_items":
 		[
 		],
-		"width": 659.0
+		"width": 1100.0
 	},
 	"selected_group": 0,
 	"settings":
