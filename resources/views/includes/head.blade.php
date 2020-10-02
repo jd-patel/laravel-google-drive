@@ -5,7 +5,7 @@
 <meta name="author" content="">
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <link rel="icon" href="{{ env('APP_FAVICON') }}">
-<title>@hasSection('htmlheader_title')@yield('htmlheader_title') - {{env('APP_NAME')}}@endif</title>
+<title>@hasSection('htmlheader_title')@yield('htmlheader_title')@endif</title>
 {{-- <h2>Head Section</h2> --}}
 
 <!-- Styles -->

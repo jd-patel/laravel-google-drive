@@ -8,13 +8,13 @@ use Storage;
 class GoogleDriveController extends Controller
 {
 	/**
-	 * List all the files under the google drive folder ID
+	 * List all the files from the google drive folder ID
 	 *
 	 * @return array
 	 */
 	public function listFiles()
 	{
-		try{
+		/*try{
 
 			$google_drive_folder_id = 'FOLDER_ID';
 
@@ -23,27 +23,8 @@ class GoogleDriveController extends Controller
 		}catch(\Exception $e){
 
 			\Log::debug($e);
-		}
-	}
-
-	/**
-	 * Put file on google drive
-	 *
-	 * @return array
-	 */
-	public function putFile()
-	{
-		try{
-			
-			Storage::disk('google')->put('test.txt', 'This is test file!');
-
-			return redirect()->route('dashboard')
-			->with('message','File uploaded successfully.');
-
-		}catch(\Exception $e){
-			
-			\Log::debug($e);
-		}
+		}*/
+		return view('google.listfiles');
 	}
 
 	/**
@@ -53,7 +34,7 @@ class GoogleDriveController extends Controller
 	 */
 	public function listData()
 	{
-		try{
+		/*try{
 			
 			// Parent folder ID to get data under the folder.
 			$folder_id = 'FOLDER_ID';
@@ -65,7 +46,29 @@ class GoogleDriveController extends Controller
 		}catch(\Exception $e){
 			
 			\Log::debug($e);
-		}
+		}*/
+
+		return view('google.listdata');
+	}
+
+	/**
+	 * Put file on google drive
+	 *
+	 * @return array
+	 */
+	public function putFile()
+	{
+		/*try{
+			
+			$dirPath = 'Directory Path Which You Get From List All Data';
+			Storage::disk('google')->put($dirPath.'/test.txt', 'This is test file!');
+
+		}catch(\Exception $e){
+			
+			\Log::debug($e);
+		}*/
+
+		return view('google.putfiles');
 	}
 
 	/**
@@ -75,15 +78,17 @@ class GoogleDriveController extends Controller
 	 */
 	public function getFile()
 	{
-		try{
+		/*try{
 	
-			$path = 'File Path Which You Get From Function listData';
-			$getFile = Storage::disk('google')->get($path);
+			$Filepath = 'File Path Which You Get From List All Data';
+			$getFile = Storage::disk('google')->get($Filepath);
 
 		}catch(\Exception $e){
 			
 			\Log::debug($e);
-		}
+		}*/
+
+		return view('google.getdrivefile');
 	}
 
 	/**
@@ -93,7 +98,7 @@ class GoogleDriveController extends Controller
 	 */
 	public function downloadFileToLocal()
 	{
-		try{
+		/*try{
 			
 			// Parent folder ID to get data under the folder.
 			$folder_id = 'FOLDER_ID';
@@ -112,21 +117,49 @@ class GoogleDriveController extends Controller
 				$Fileextension	= $directory_content['extension'];
 				$FileMimeType	= $directory_content['mimetype'];
 				$FileNameWithoutExt	= $directory_content['filename'];
-			}
 			
-			// Store the file in local.
-			$fileStream		= Storage::disk('google')->getDriver()->readStream($Filepath);
-			$newFileName	= time().$FileName;
+				// Store the file in local.
+				$fileStream		= Storage::disk('google')->getDriver()->readStream($Filepath);
+				$newFileName	= time().$FileName;
 
-			// You can also use file put content.
-			// $storage_path	= storage_path($newFileName);
-			// file_put_contents($storage_path, stream_get_contents($fileStream), FILE_APPEND);
+				// You can also use file put content.
+				// $storage_path	= storage_path($newFileName);
+				// file_put_contents($storage_path, stream_get_contents($fileStream), FILE_APPEND);
 
-			// Storage::disk('local')->put($newFileName, stream_get_contents($fileStream));
+				// Storage::disk('local')->put($newFileName, stream_get_contents($fileStream));
+			}
 
 		}catch(\Exception $e){
 			
 			\Log::debug($e);
-		}
+		}*/
+
+		return view('google.downloadfile');
+	}
+
+	/**
+	 * Export file
+	 *
+	 * @return array
+	 */
+	public function exportFile()
+	{
+		/*try{
+
+			$FileName		= "FILE_NAME";
+			$Filepath		= "FILE_PATH";
+			$FileMimeType	= "FILE_MIME_TYPE";
+			$getFile		= Storage::disk('google')->get($Filepath);
+
+		return response($getFile, 200)
+			->header('ContentType', $FileMimeType)
+			->header('Content-Disposition', "attachment; filename=$FileName");
+
+		}catch(\Exception $e){
+			
+			\Log::debug($e);
+		}*/
+
+		return view('google.exportfile');
 	}
 }

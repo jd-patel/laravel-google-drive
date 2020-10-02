@@ -16,9 +16,12 @@ use App\Http\Controllers\DashboardController;
 */
 
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
-Route::get('/drive/list', [GoogleDriveController::class, 'listFiles'])->name('drive.list');
-Route::get('/drive/file/put', [GoogleDriveController::class, 'putFile'])->name('drive.put.file');
-Route::get('/drive/list/data', [GoogleDriveController::class, 'listData'])->name('drive.list.data');
-Route::get('/drive/get/file', [GoogleDriveController::class, 'getFile'])->name('drive.get.file');
-Route::get('/drive/file/download/local', [GoogleDriveController::class, 'downloadFileToLocal'])->name('download.file.local');
-// Auth::routes();
+
+Route::name('drive.')->group(function () {
+	Route::get('/list', [GoogleDriveController::class, 'listFiles'])->name('list');
+	Route::get('/file/put', [GoogleDriveController::class, 'putFile'])->name('put.file');
+	Route::get('/list/data', [GoogleDriveController::class, 'listData'])->name('list.data');
+	Route::get('/get/file', [GoogleDriveController::class, 'getFile'])->name('get.file');
+	Route::get('/file/download/local', [GoogleDriveController::class, 'downloadFileToLocal'])->name('download.file.local');
+	Route::get('/file/export', [GoogleDriveController::class, 'exportFile'])->name('export.drive.file');
+});

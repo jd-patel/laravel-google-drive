@@ -1,7 +1,7 @@
-<body class="hold-transition sidebar-mini">
+<body>
 <header class="main-header">
 	<nav class="navbar navbar-light bg-light">
-	  <a class="navbar-brand">AWS and Google Drive Storage with Laravel</a>
+	  <span class="navbar-brand mb-0 h1">AWS and Google Drive Storage with Laravel</span>
 	</nav>
 
 </header>
